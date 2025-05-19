@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -34,23 +33,23 @@ const Contact = () => {
             className="border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
             asChild
           >
-            <Link href="#">
+            <a href="#">
               <Download className="mr-2 h-5 w-5" />
               Download Resume
-            </Link>
+            </a>
           </Button>
         </div>
         
         <div className="flex justify-center space-x-8">
-          <Link href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
             <Github size={24} />
-          </Link>
-          <Link href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          </a>
+          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
             <Linkedin size={24} />
-          </Link>
-          <Link href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          </a>
+          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
             <Mail size={24} />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

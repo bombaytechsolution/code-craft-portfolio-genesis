@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import Link from 'next/link';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +31,7 @@ const Navigation = () => {
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="text-3xl font-mono text-highlight">
-          <Link href="#" className="font-bold">DE</Link>
+          <a href="#" className="font-bold">DE</a>
         </div>
         
         {/* Desktop Navigation */}
@@ -40,13 +39,13 @@ const Navigation = () => {
           <ul className="flex items-center space-x-8">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link 
+                <a 
                   href={link.url}
                   className="nav-link"
                 >
                   <span className="text-highlight mr-1">{index + 1}.</span>
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
             <li>
@@ -77,14 +76,14 @@ const Navigation = () => {
           <ul className="flex flex-col items-center space-y-8">
             {navLinks.map((link, index) => (
               <li key={index} className="w-full text-center">
-                <Link 
+                <a 
                   href={link.url}
                   className="text-xl font-mono block py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="text-highlight mr-2">{index + 1}.</span>
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
             <li className="w-full pt-4">
