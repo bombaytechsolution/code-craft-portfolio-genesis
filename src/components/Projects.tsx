@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import Link from 'next/link';
 
 const Projects = () => {
   const featuredProjects = [
@@ -114,16 +114,16 @@ const Projects = () => {
                 </ul>
                 
                 <div className="flex space-x-4">
-                  <a href={project.github} className="text-foreground hover:text-highlight transition-colors">
+                  <Link href={project.github} className="text-foreground hover:text-highlight transition-colors">
                     <Github size={20} />
-                  </a>
-                  <a href={project.external} className="text-foreground hover:text-highlight transition-colors">
+                  </Link>
+                  <Link href={project.external} className="text-foreground hover:text-highlight transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                       <polyline points="15 3 21 3 21 9"></polyline>
                       <line x1="10" y1="14" x2="21" y2="3"></line>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -141,9 +141,9 @@ const Projects = () => {
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
               <div className="flex space-x-3">
-                <a href="#" className="text-foreground hover:text-highlight transition-colors">
+                <Link href="#" className="text-foreground hover:text-highlight transition-colors">
                   <Github size={20} />
-                </a>
+                </Link>
               </div>
             </div>
             

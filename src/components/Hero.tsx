@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -27,21 +28,21 @@ const Hero = () => {
           className="bg-transparent border border-highlight text-highlight hover:bg-highlight/10 px-6 py-4 text-base"
           asChild
         >
-          <a href="#projects">View My Work</a>
+          <Link href="#projects">View My Work</Link>
         </Button>
         <Button 
           variant="outline" 
           className="border-highlight text-highlight hover:bg-highlight/10 px-6 py-4 text-base"
           asChild
         >
-          <a href="#contact">Get In Touch</a>
+          <Link href="#contact">Get In Touch</Link>
         </Button>
       </div>
       <div className="opacity-0 animate-fade-in-delay-5 absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block">
-        <a href="#about" className="flex flex-col items-center justify-center text-muted-foreground hover:text-highlight transition-colors duration-300">
+        <Link href="#about" className="flex flex-col items-center justify-center text-muted-foreground hover:text-highlight transition-colors duration-300">
           <span className="text-sm font-mono mb-2">Scroll Down</span>
           <ArrowDown className="animate-bounce" />
-        </a>
+        </Link>
       </div>
     </section>
   );
