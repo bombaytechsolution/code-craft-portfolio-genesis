@@ -10,14 +10,16 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    // Apply delay class to ensure proper animation
+    // Apply animations to sections when they enter viewport
     const sections = document.querySelectorAll('section:not(:first-child)');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Only add the animation class and don't unobserve
+            // This allows the section to remain visible after animation
             entry.target.classList.add('animate-fade-in');
-            observer.unobserve(entry.target);
+            entry.target.classList.remove('opacity-0');
           }
         });
       },
@@ -25,6 +27,7 @@ const Index = () => {
     );
     
     sections.forEach((section) => {
+      // Set initial state
       section.classList.add('opacity-0');
       observer.observe(section);
     });
