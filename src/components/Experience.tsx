@@ -6,42 +6,42 @@ const Experience = () => {
   const experiences = [
     {
       id: "seniordev",
-      company: "TechGiant Inc.",
+      company: "TechScale Solutions",
       position: "Senior Backend Engineer",
       period: "January 2021 - Present",
       descriptions: [
-        "Led the redesign of a critical payment processing system handling $10M in daily transactions, increasing throughput by 35% and reducing error rates by 50%.",
-        "Architected and implemented a distributed caching layer that reduced database load by 70% and improved API response times by 40%.",
-        "Mentored a team of 5 junior engineers, establishing best practices for code reviews, testing, and documentation.",
-        "Implemented comprehensive monitoring and alerting systems using Prometheus and Grafana, reducing incident response time by 60%."
+        "Led development of a real-time Point-of-Sale platform processing 10,000+ transactions daily with Node.js and NestJS, ensuring 99.9% uptime.",
+        "Architected secure transaction flows and payment processing systems using AWS Lambda and EventBridge, reducing processing time by 40%.",
+        "Implemented microservice architecture with containerized applications using Docker and Kubernetes, improving scalability and deployment efficiency.",
+        "Mentored junior engineers on clean code practices and system design, establishing coding standards and documentation protocols."
       ],
-      technologies: ["Node.js", "Kubernetes", "PostgreSQL", "Redis", "AWS"]
+      technologies: ["Node.js", "NestJS", "AWS", "PostgreSQL", "Kubernetes"]
     },
     {
       id: "midleveldev",
-      company: "ScaleUp Solutions",
+      company: "DataFlow Systems",
       position: "Backend Developer",
       period: "March 2018 - December 2020",
       descriptions: [
-        "Developed and maintained RESTful APIs serving over 3 million monthly active users.",
-        "Improved database query performance by 45% through optimization and indexing strategies.",
-        "Designed and implemented a message queue system to handle asynchronous processing of user-generated content.",
-        "Collaborated with frontend teams to define API contracts and ensure seamless integration."
+        "Built and maintained API services handling 5M+ monthly requests for a SaaS product used by enterprise clients.",
+        "Optimized MongoDB queries and implemented caching strategies that improved response times by 60%.",
+        "Designed and implemented event-driven architecture for real-time data processing using RabbitMQ.",
+        "Collaborated with product teams to shape feature requirements and ensure technical feasibility before implementation."
       ],
-      technologies: ["Python", "Django", "MySQL", "RabbitMQ", "Docker"]
+      technologies: ["Node.js", "Express", "MongoDB", "RabbitMQ", "AWS EC2"]
     },
     {
       id: "juniordev",
-      company: "StartupLab",
+      company: "InnoTech Ventures",
       position: "Software Engineer",
       period: "July 2016 - February 2018",
       descriptions: [
-        "Built microservices for a B2B SaaS platform using Java Spring Boot.",
-        "Implemented authentication and authorization systems using OAuth 2.0 and JWT.",
-        "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives.",
-        "Contributed to the migration from a monolithic architecture to microservices."
+        "Developed RESTful APIs and backend services for an e-commerce platform serving 50,000+ monthly active users.",
+        "Implemented authentication and authorization systems with OAuth 2.0 and JWT for secure user management.",
+        "Created automated testing suites that reduced regression bugs by 40% and improved deployment confidence.",
+        "Participated in on-call rotations to handle production issues, developing strong troubleshooting skills."
       ],
-      technologies: ["Java", "Spring Boot", "MongoDB", "Jenkins", "Git"]
+      technologies: ["Node.js", "Express", "PostgreSQL", "Redis", "CI/CD"]
     }
   ];
 

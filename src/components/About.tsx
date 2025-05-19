@@ -3,10 +3,10 @@ import React from 'react';
 
 const About = () => {
   const skills = [
-    'Node.js', 'Python', 'Java', 'Go',
-    'AWS', 'Docker', 'Kubernetes',
-    'MongoDB', 'PostgreSQL', 'Redis',
-    'RabbitMQ', 'Kafka',
+    'Node.js', 'NestJS', 'Express', 'TypeScript',
+    'AWS (Lambda, EventBridge, RDS, EC2)',
+    'PostgreSQL', 'MongoDB', 'Redis',
+    'Docker', 'Kubernetes',
     'Microservices', 'API Design',
     'CI/CD', 'System Architecture'
   ];
@@ -21,16 +21,16 @@ const About = () => {
           
           <div className="space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm a passionate backend engineer who thrives on building robust, scalable systems that power modern applications. My journey in software development started 7 years ago, and since then I've been dedicated to crafting efficient server-side solutions.
+              Hello! I'm a passionate backend engineer who transforms complex backend challenges into elegant, scalable solutions. With over 7 years in the industry, I've specialized in building resilient systems that power meaningful applications.
             </p>
             <p>
-              My approach to engineering focuses on performance, maintainability, and security. I believe that well-designed backend architecture is the foundation of exceptional user experiences, even if it remains invisible to the end user.
+              My approach to engineering focuses on more than just writing code—I think like a product person. This means prioritizing user experience, reliability, and maintainability from day one, while delivering technical solutions that drive business value.
             </p>
             <p>
-              Throughout my career, I've worked on high-traffic systems handling millions of requests, designed data models that scale elegantly, and implemented infrastructure that maintains stability under pressure.
+              Throughout my career, I've built everything from real-time Point-of-Sale platforms to secure transaction flows, always finding the balance between moving fast and maintaining stability. I take ownership of projects from initial idea through to deployment and beyond.
             </p>
             <p>
-              When I'm not optimizing database queries or designing API endpoints, I enjoy contributing to open-source projects and mentoring junior developers. I'm constantly learning and experimenting with new technologies to stay ahead of industry trends.
+              Whether it's designing APIs, setting up cloud infrastructure, or debugging edge cases in production environments, I bring a blend of technical expertise and product thinking that helps startups and businesses ship reliable products quickly.
             </p>
           </div>
           

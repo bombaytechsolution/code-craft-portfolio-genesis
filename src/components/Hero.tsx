@@ -14,12 +14,12 @@ const Hero = () => {
       </div>
       <div className="opacity-0 animate-fade-in-delay-2">
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6">
-          Building the backbone of digital products.
+          Building systems that ship fast and scale clean.
         </h2>
       </div>
       <div className="opacity-0 animate-fade-in-delay-3 max-w-2xl">
         <p className="text-lg text-muted-foreground mb-8">
-          I'm a senior backend engineer with 7 years of experience, who doesn't just write code—I build products that ship fast and scale clean. Specializing in resilient systems and cloud architecture.
+          I'm a senior backend engineer with 7+ years of experience, who turns backend chaos into simple, stable, and scalable systems. Specializing in Node.js, NestJS, and AWS infrastructure.
         </p>
       </div>
       <div className="opacity-0 animate-fade-in-delay-4 flex space-x-4">

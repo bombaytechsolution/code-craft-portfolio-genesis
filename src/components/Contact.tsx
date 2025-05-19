@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -14,20 +14,33 @@ const Contact = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-primary mt-6 mb-6">Get In Touch</h2>
         
         <p className="text-muted-foreground mb-12">
-          I'm currently open to new opportunities and would love to hear about your project. Whether you have a question or just want to say hi, I'll get back to you as soon as I can!
+          I'm currently open to new opportunities where I can help build meaningful products and systems that scale. Whether you need a backend engineer who thinks like a founder or just want to connect about a project, I'd love to hear from you!
         </p>
         
-        <Button 
-          className="bg-transparent border border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
-          asChild
-        >
-          <a href="mailto:hello@example.com">
-            <Mail className="mr-2 h-5 w-5" />
-            Say Hello
-          </a>
-        </Button>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+          <Button 
+            className="bg-transparent border border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
+            asChild
+          >
+            <a href="mailto:hello@example.com">
+              <Mail className="mr-2 h-5 w-5" />
+              Say Hello
+            </a>
+          </Button>
+          
+          <Button 
+            variant="outline" 
+            className="border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
+            asChild
+          >
+            <a href="#">
+              <Download className="mr-2 h-5 w-5" />
+              Download Resume
+            </a>
+          </Button>
+        </div>
         
-        <div className="flex justify-center mt-16 space-x-8">
+        <div className="flex justify-center space-x-8">
           <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
             <Github size={24} />
           </a>
@@ -35,7 +48,7 @@ const Contact = () => {
             <Linkedin size={24} />
           </a>
           <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
-            <MessageSquare size={24} />
+            <Mail size={24} />
           </a>
         </div>
       </div>

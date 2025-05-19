@@ -6,61 +6,61 @@ import { Card } from "@/components/ui/card";
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "Distributed Message Queue",
-      description: "A high-performance message queue system built from scratch, handling over 50k messages per second with guaranteed delivery and fault tolerance.",
-      technologies: ["Go", "gRPC", "Raft Consensus", "Redis"],
+      title: "Real-time POS Platform",
+      description: "A high-performance point-of-sale system handling 10,000+ transactions daily with real-time inventory management, transaction processing, and reporting features.",
+      technologies: ["Node.js", "NestJS", "PostgreSQL", "Redis", "AWS Lambda"],
       github: "#",
       external: "#",
-      imageDescription: "Abstract visualization of distributed system"
+      imageDescription: "Real-time transaction processing system"
     },
     {
-      title: "E-commerce Payment Gateway",
-      description: "A secure payment processing system that handles multi-currency transactions, integrates with multiple payment providers, and includes comprehensive fraud detection.",
-      technologies: ["Node.js", "Express", "PostgreSQL", "Docker", "Stripe API"],
+      title: "Secure Payment Gateway",
+      description: "A robust payment processing system with multi-currency support, fraud detection, and compliance with international security standards (PCI-DSS).",
+      technologies: ["Node.js", "Express", "AWS EventBridge", "Docker", "Stripe API"],
       github: "#",
       external: "#",
       imageDescription: "Financial system architecture diagram"
     },
     {
-      title: "Real-time Analytics Engine",
-      description: "A scalable analytics platform processing terabytes of data daily, with sub-second query response times and customizable dashboards.",
-      technologies: ["Python", "Apache Kafka", "Elasticsearch", "Kubernetes", "Prometheus"],
+      title: "Microservice Architecture",
+      description: "A containerized microservice infrastructure supporting high-availability applications with automated scaling, service discovery, and fault tolerance.",
+      technologies: ["Kubernetes", "Docker", "AWS EC2", "Terraform", "Prometheus"],
       github: "#",
       external: "#",
-      imageDescription: "Data visualization dashboard"
+      imageDescription: "Microservice architecture diagram"
     }
   ];
   
   const otherProjects = [
     {
-      title: "Authentication Microservice",
-      description: "A secure authentication system with multi-factor authentication, OAuth integration, and fine-grained permission controls.",
-      technologies: ["Java", "Spring Boot", "JWT", "OAuth2"]
+      title: "Authentication Service",
+      description: "A secure authentication system with multi-factor authentication, role-based access control, and single sign-on capabilities for enterprise applications.",
+      technologies: ["Node.js", "NestJS", "JWT", "OAuth2"]
     },
     {
       title: "Database Migration Tool",
-      description: "A tool for safely migrating large databases with minimal downtime, featuring automatic schema validation and rollback capabilities.",
-      technologies: ["Python", "SQLAlchemy", "PostgreSQL"]
+      description: "A tool for seamlessly migrating large production databases with minimal downtime, featuring automatic schema validation and rollback capabilities.",
+      technologies: ["TypeScript", "PostgreSQL", "MongoDB"]
     },
     {
       title: "API Gateway",
-      description: "A high-performance gateway service providing routing, load balancing, rate limiting, and request validation for microservices.",
+      description: "A high-performance gateway service providing routing, load balancing, rate limiting, and request validation for distributed microservices.",
       technologies: ["Node.js", "Express", "Redis", "Docker"]
     },
     {
-      title: "Event Sourcing Framework",
-      description: "A lightweight framework for implementing event sourcing and CQRS patterns in distributed systems.",
+      title: "Event Sourcing System",
+      description: "A lightweight framework implementing event sourcing and CQRS patterns for maintaining reliable audit trails and state reconstruction.",
       technologies: ["TypeScript", "RabbitMQ", "MongoDB"]
     },
     {
-      title: "Logging Infrastructure",
-      description: "A centralized logging system with real-time alerting, search capabilities, and visualization dashboards.",
-      technologies: ["ELK Stack", "Fluentd", "Grafana"]
+      title: "CI/CD Pipeline",
+      description: "An automated continuous integration and deployment pipeline with integrated testing, security scanning, and blue-green deployment strategies.",
+      technologies: ["AWS CodePipeline", "Docker", "Jest", "GitHub Actions"]
     },
     {
-      title: "Continuous Deployment Pipeline",
-      description: "An automated CI/CD pipeline with integrated testing, security scanning, and blue-green deployments.",
-      technologies: ["Jenkins", "Docker", "Kubernetes", "Terraform"]
+      title: "Monitoring Infrastructure",
+      description: "A comprehensive monitoring system with real-time alerting, metrics visualization, and anomaly detection for production services.",
+      technologies: ["Prometheus", "Grafana", "ELK Stack", "AWS CloudWatch"]
     }
   ];
 
