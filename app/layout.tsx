@@ -2,18 +2,18 @@ import ClientProviders from "@/src/components/ClientProviders";
 import "./globals.css";
 
 export const metadata = {
-  title: "Senior Backend Engineer Portfolio",
-  description: "Senior Backend Engineer with 7 years of experience building scalable, high-performance applications",
+  title: "Shubhankar Borade | Senior Backend Engineer",
+  description: "Senior Backend Engineer with 7+ years experience building scalable systems that ship fast and scale clean",
   openGraph: {
-    title: "Senior Backend Engineer Portfolio",
-    description: "Senior Backend Engineer with 7 years of experience building scalable, high-performance applications",
+    title: "Shubhankar Borade | Senior Backend Engineer",
+    description: "Senior Backend Engineer with 7+ years experience building scalable systems that ship fast and scale clean",
     type: "website",
-    images: "https://lovable.dev/opengraph-image-p98pqg.png",
+    images: "/profile.JPG",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@lovable_dev",
-    images: "https://lovable.dev/opengraph-image-p98pqg.png",
+    site: "@ShubhankarBorade",
+    images: "/profile.JPG",
   },
 }
 
@@ -31,7 +31,6 @@ export default function RootLayout({
         <ClientProviders>
           {children}
         </ClientProviders>
-        <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
       </body>
     </html>
   );
