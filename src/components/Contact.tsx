@@ -21,7 +21,7 @@ const Contact = () => {
             className="bg-transparent border border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
             asChild
           >
-            <a href="mailto:hello@example.com">
+            <a href="mailto:shborade@gmail.com">
               <Mail className="mr-2 h-5 w-5" />
               Say Hello
             </a>
@@ -32,7 +32,7 @@ const Contact = () => {
             className="border-highlight text-highlight hover:bg-highlight/10 px-8 py-6 text-lg"
             asChild
           >
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1RwJxRvOcrAlSKIZo6eiDuhLytXu6gvu3/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-5 w-5" />
               Download Resume
             </a>
@@ -40,13 +40,13 @@ const Contact = () => {
         </div>
         
         <div className="flex space-x-8">
-          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          <a href="https://github.com/Shubhankar02" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-highlight transition-colors">
             <Github size={24} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          <a href="https://www.linkedin.com/in/shubhankar-borade/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-highlight transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-highlight transition-colors">
+          <a href="mailto:shborade@gmail.com" className="text-muted-foreground hover:text-highlight transition-colors">
             <Mail size={24} />
           </a>
         </div>

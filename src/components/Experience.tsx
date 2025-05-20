@@ -1,47 +1,49 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Experience = () => {
   const experiences = [
     {
-      id: "seniordev",
-      company: "TechScale Solutions",
-      position: "Senior Backend Engineer",
-      period: "January 2021 - Present",
+      id: "lead",
+      company: "Dirtube Interactive",
+      position: "Lead Architecture",
+      period: "2023 - 2025",
+      project: "Specter",  
       descriptions: [
-        "Led development of a real-time Point-of-Sale platform processing 10,000+ transactions daily with Node.js and NestJS, ensuring 99.9% uptime.",
-        "Architected secure transaction flows and payment processing systems using AWS Lambda and EventBridge, reducing processing time by 40%.",
-        "Implemented microservice architecture with containerized applications using Docker and Kubernetes, improving scalability and deployment efficiency.",
-        "Mentored junior engineers on clean code practices and system design, establishing coding standards and documentation protocols."
+        "Optimized MongoDB performance by reducing the return vs scanned document ratio from 1:1000 to 1:10, significantly improving query efficiency within an achievement system.",
+        "Built a complex live-ops scheduling system using Redis queues to manage tasks, competitions, and other scheduled events.",
+        "Developed and deployed APIs and CI/CD pipelines via AWS CodePipeline for automated, multi-environment deployment.",
+        "Established company-wide technical standards and best practices for backend development, improving code quality and reducing onboarding time."
       ],
-      technologies: ["Node.js", "NestJS", "AWS", "PostgreSQL", "Kubernetes"]
+      technologies: ["NestJS", "MongoDB", "Redis", "AWS CodePipeline", "CI/CD"]
     },
     {
-      id: "midleveldev",
-      company: "DataFlow Systems",
+      id: "senior",
+      company: "Dirtube Interactive",
+      position: "Senior Backend Developer",
+      period: "2021 - 2023",
+      project: "Gamestarz",
+      descriptions: [
+        "Implemented a secure database design in PostgreSQL and built an in-house transaction system with APIs developed in NestJS to handle real-money operations efficiently.",
+        "Developed a Redis-based live-ops scheduling system to automate competition and task scheduling, enhancing scalability.",
+        "Built and deployed APIs using AWS (Lambda, EC2) for scalability and high availability, demonstrating proficiency in cloud deployment.",
+        "Managed a team of backend engineers, establishing coding standards and mentoring junior team members."
+      ],
+      technologies: ["NestJS", "PostgreSQL", "Redis", "AWS Lambda", "AWS EC2"]
+    },
+    {
+      id: "backend",
+      company: "Dirtube Interactive",
       position: "Backend Developer",
-      period: "March 2018 - December 2020",
+      period: "2019 - 2021",
+      project: "Capshot",
       descriptions: [
-        "Built and maintained API services handling 5M+ monthly requests for a SaaS product used by enterprise clients.",
-        "Optimized MongoDB queries and implemented caching strategies that improved response times by 60%.",
-        "Designed and implemented event-driven architecture for real-time data processing using RabbitMQ.",
-        "Collaborated with product teams to shape feature requirements and ensure technical feasibility before implementation."
+        "Used MongoDB for caching to reduce client-server response times by 80%, implementing a cron job for efficient data retrieval.",
+        "Built a real-time chat system using Socket.io and ExpressJS to develop APIs, enabling seamless user communication.",
+        "Integrated FFmpeg for automated video thumbnail generation, improving content loading times and user experience.",
+        "Created automated testing suites that reduced regression bugs by 40% and improved deployment confidence."
       ],
-      technologies: ["Node.js", "Express", "MongoDB", "RabbitMQ", "AWS EC2"]
-    },
-    {
-      id: "juniordev",
-      company: "InnoTech Ventures",
-      position: "Software Engineer",
-      period: "July 2016 - February 2018",
-      descriptions: [
-        "Developed RESTful APIs and backend services for an e-commerce platform serving 50,000+ monthly active users.",
-        "Implemented authentication and authorization systems with OAuth 2.0 and JWT for secure user management.",
-        "Created automated testing suites that reduced regression bugs by 40% and improved deployment confidence.",
-        "Participated in on-call rotations to handle production issues, developing strong troubleshooting skills."
-      ],
-      technologies: ["Node.js", "Express", "PostgreSQL", "Redis", "CI/CD"]
+      technologies: ["Node.js", "Express", "MongoDB", "Socket.io", "FFmpeg"]
     }
   ];
 
@@ -52,7 +54,7 @@ const Experience = () => {
       </h3>
       
       <div className="mt-10">
-        <Tabs defaultValue="seniordev" className="max-w-3xl">
+        <Tabs defaultValue="lead" className="max-w-3xl">
           <TabsList className="mb-8 flex flex-wrap overflow-x-auto border-b border-muted bg-transparent h-auto w-full">
             {experiences.map((exp) => (
               <TabsTrigger 
@@ -60,7 +62,7 @@ const Experience = () => {
                 value={exp.id}
                 className="data-[state=active]:text-highlight data-[state=active]:border-b-2 data-[state=active]:border-highlight pb-2 px-4 text-sm font-mono"
               >
-                {exp.company}
+                {exp.position}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -70,7 +72,8 @@ const Experience = () => {
               <h3 className="text-xl text-primary mb-1">
                 {exp.position} <span className="text-highlight">@ {exp.company}</span>
               </h3>
-              <p className="font-mono text-sm mb-4">{exp.period}</p>
+              <p className="font-mono text-sm mb-1">{exp.period}</p>
+              <p className="font-mono text-sm mb-4 text-highlight">Project: {exp.project}</p>
               
               <ul className="space-y-4">
                 {exp.descriptions.map((desc, index) => (

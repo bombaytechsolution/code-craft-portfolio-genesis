@@ -71,9 +71,15 @@ const Navigation = () => {
               </li>
             ))}
             <li>
-              <Button variant="outline" className="border-highlight text-highlight hover:bg-highlight/10">
-                <Download className="mr-2 h-4 w-4" />
-                Resume
+              <Button 
+                variant="outline" 
+                className="border-highlight text-highlight hover:bg-highlight/10"
+                asChild
+              >
+                <a href="https://drive.google.com/file/d/1RwJxRvOcrAlSKIZo6eiDuhLytXu6gvu3/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
               </Button>
             </li>
           </ul>
@@ -114,9 +120,20 @@ const Navigation = () => {
               </li>
             ))}
             <li className="w-full pt-4">
-              <Button variant="outline" className="w-full border-highlight text-highlight hover:bg-highlight/10">
-                <Download className="mr-2 h-4 w-4" />
-                Resume
+              <Button 
+                variant="outline" 
+                className="w-full border-highlight text-highlight hover:bg-highlight/10"
+                asChild
+              >
+                <a 
+                  href="https://drive.google.com/file/d/1RwJxRvOcrAlSKIZo6eiDuhLytXu6gvu3/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
               </Button>
             </li>
           </ul>

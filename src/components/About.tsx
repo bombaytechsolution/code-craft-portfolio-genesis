@@ -4,11 +4,12 @@ import Image from 'next/image';
 const About = () => {
   const skills = [
     'Node.js', 'NestJS', 'Express', 'TypeScript',
-    'AWS (Lambda, EventBridge, RDS, EC2)',
-    'PostgreSQL', 'MongoDB', 'Redis',
-    'Docker', 'Kubernetes',
-    'Microservices', 'API Design',
-    'CI/CD', 'System Architecture'
+    'MongoDB', 'PostgreSQL', 'Redis',
+    'AWS (Lambda, EC2, CodePipeline)',
+    'Socket.io', 'Real-time Systems',
+    'Database Optimization', 'Live-ops Scheduling',
+    'Transaction Systems', 'API Design',
+    'FFmpeg', 'CI/CD'
   ];
 
   return (
@@ -21,16 +22,19 @@ const About = () => {
           
           <div className="space-y-4 text-muted-foreground">
             <p>
-              Hello! I'm a passionate backend engineer who transforms complex backend challenges into elegant, scalable solutions. With over 7 years in the industry, I've specialized in building resilient systems that power meaningful applications.
+              I'm a senior backend engineer who doesn't just write code—I build products that ship fast and scale clean.
             </p>
             <p>
-              My approach to engineering focuses on more than just writing code—I think like a product person. This means prioritizing user experience, reliability, and maintainability from day one, while delivering technical solutions that drive business value.
+              With 7+ years of experience in Node.js, NestJS, PostgreSQL, MongoDB, and AWS, I specialize in turning backend chaos into simple, stable, and scalable systems. From building real-time POS platforms to secure transaction flows, I know how to move fast without breaking things.
             </p>
             <p>
-              Throughout my career, I've built everything from real-time Point-of-Sale platforms to secure transaction flows, always finding the balance between moving fast and maintaining stability. I take ownership of projects from initial idea through to deployment and beyond.
+              More than a developer, I think like a product person—focusing on user experience, reliability, and maintainability from day one. Whether it's designing APIs, setting up infrastructure, or debugging edge cases, I take ownership from idea to deployment.
             </p>
             <p>
-              Whether it's designing APIs, setting up cloud infrastructure, or debugging edge cases in production environments, I bring a blend of technical expertise and product thinking that helps startups and businesses ship reliable products quickly.
+              🔧 What I bring: Rapid backend development with clean architecture, AWS-powered scalability (Lambda, EventBridge, RDS, EC2), real-world problem solving from production fire-fights, and a mindset built for startups: lean, reliable, fast.
+            </p>
+            <p>
+              📬 If you're building something meaningful and need a backend engineer who can own the tech while thinking like a founder—let's connect.
             </p>
           </div>
           
