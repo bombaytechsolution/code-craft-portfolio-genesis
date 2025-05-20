@@ -1,4 +1,49 @@
-# Welcome to your Lovable project
+# Code Craft Portfolio
+
+A professional portfolio website for showcasing developer experience and projects, built with Next.js and Tailwind CSS.
+
+## Technologies Used
+
+This project is built with:
+
+- Next.js 15
+- TypeScript
+- React
+- shadcn/ui
+- Tailwind CSS
+- TanStack Query
+
+## Getting Started
+
+Make sure you have Node.js installed (v18.17 or newer).
+
+```sh
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Building for Production
+
+```sh
+# Create an optimized production build
+npm run build
+
+# Start the production server
+npm run start
+```
+
+## Project Structure
+
+- `/app` - Next.js App Router pages and layouts
+- `/src/components` - React components
+- `/src/hooks` - Custom React hooks
+- `/src/lib` - Utility functions and helpers
+- `/public` - Static assets
 
 ## Project info
 
@@ -49,16 +94,6 @@ npm run dev
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
 ## How can I deploy this project?
 

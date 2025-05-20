@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Image from 'next/image';
 
 const About = () => {
   const skills = [
@@ -45,13 +45,16 @@ const About = () => {
         </div>
         
         <div className="md:col-span-1">
-          <div className="relative group">
+          <div className="relative group mt-6">
             <div className="absolute -inset-1.5 bg-highlight opacity-30 rounded-lg blur group-hover:opacity-100 transition duration-300"></div>
-            <div className="relative rounded-lg overflow-hidden bg-secondary aspect-square">
-              <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                <span className="text-7xl">DE</span>
-              </div>
-              {/* Profile image would go here */}
+            <div className="relative rounded-lg overflow-hidden bg-secondary" style={{ height: '400px', width: '100%' }}>
+              <Image 
+                src="/profile.JPG" 
+                alt="Profile picture" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </div>

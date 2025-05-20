@@ -1,3 +1,4 @@
+'use client';
 
 import React, { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
@@ -8,7 +9,7 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+export default function Home() {
   useEffect(() => {
     // Apply animations to sections when they enter viewport
     const sections = document.querySelectorAll('section:not(:first-child)');
@@ -52,6 +53,4 @@ const Index = () => {
       <Footer />
     </div>
   );
-};
-
-export default Index;
+} 
